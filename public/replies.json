@@ -1,0 +1,23 @@
+{
+    "trigger": [
+        ["hi", "hey", "hello"],
+        ["how are you", "how are things", "how you doing"],
+        ["what is going on", "what is up"],
+        ["happy", "good", "amazing", "fantastic", "cool"],
+        ["bad", "bored", "tired", "sad"],
+        ["thanks", "thank you"],
+        ["bye", "good bye", "goodbye"]
+    ],
+    "reply": [
+        ["Hello", "Hi", "It's nice seeing you!"],
+        ["I'm doing good... how are you?", "I feel kind of lonely, how are you?", "I feel happy, how are you?"],
+        ["Nothing much", "Exciting things!", "I'm happy to see you!"],
+        ["Glad to hear it", "Yayyy!! That's the spirit!"],
+        ["There is always a rainbow after the rain!"],
+        ["You're welcome", "No problem", "It's my pleasure!"],
+        ["Goodbye, it was a nice talk"]
+    ],
+    "alternative": [
+        "Same", "Go on...", "Try again please?", "I'm listening..."
+    ]
+}

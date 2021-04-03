@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import {useState, useEffect} from 'react'
 import './App.css';
+import ChatBot from "./components/chatbot";
 
 function App() {
+
+  const [convWords, setConvWords] = useState({});
+
+  useEffect(() => {
+    fetch('/replies.json')
+      .then((res)=>res.json())
+      .then((data)=>setConvWords(data))
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ChatBot replies={convWords.reply} triggers={convWords.trigger} alts={convWords.alternative} />
     </div>
   );
 }
